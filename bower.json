@@ -1,0 +1,39 @@
+{
+  "name": "pointing-poker",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "Module for",
+  "main": [
+    "./dist/pointing-poker.templates.js",
+    "./dist/css/styles.css"
+  ],
+  "authors": [
+    "Oliver partida <oliverpartida@hotmail.com>"
+  ],
+  "keywords": [
+    "fisioterapia",
+    "ams"
+  ],
+  "ignore": [
+    "lang",
+    "src/*",
+    "test",
+    "_data",
+    "Gulpfile.js",
+    "gulpConfig.json",
+    "index.html",
+    "node_modules",
+    "bower_components",
+    "karma.conf.js"
+  ],
+  "dependencies": {
+    "angular": "~1.5",
+    "font-awesome": "~4.5.0",
+    "salesforce-lightning-design-system": "~1.0.0",
+    "angular-ui-router": "~0.3.1",
+    "bootstrap": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5"
+  }
+}
