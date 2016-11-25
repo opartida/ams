@@ -1,11 +1,14 @@
 {
-  "name": "pointing-poker",
+  "name": "ams",
   "license": "MIT",
   "version": "0.0.1",
   "description": "Module for",
   "main": [
-    "./dist/pointing-poker.templates.js",
-    "./dist/css/styles.css"
+    "./dist/css/styles.css",
+    "./dist/images/dolor_pelvico_cronico.jpg",
+    "./dist/images/hombres.jpg",
+    "./dist/images/mujeres.jpg",
+    "./dist/images/ninos.jpg"
   ],
   "authors": [
     "Oliver partida <oliverpartida@hotmail.com>"
@@ -27,13 +30,20 @@
     "karma.conf.js"
   ],
   "dependencies": {
-    "angular": "~1.5",
+    "jquery": "~1.12.0",
     "font-awesome": "~4.5.0",
-    "salesforce-lightning-design-system": "~1.0.0",
-    "angular-ui-router": "~0.3.1",
-    "bootstrap": "*"
+    "bootstrap": "3.3.7"
   },
-  "devDependencies": {
-    "angular-mocks": "~1.5"
+  "devDependencies": {},
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.min.js",
+        "dist/css/bootstrap.min.css",
+        "dist/css/bootstrap-flex.min.css",
+        "dist/css/bootstrap-grid.min.css",
+        "dist/css/bootstrap-reboot.min.css"
+      ]
+    }
   }
 }
