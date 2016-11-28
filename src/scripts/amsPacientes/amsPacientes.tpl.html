@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <div ng-if="amsPacientesCtrl.checkTipoPaciente('hombres')">
   <ul  class="nav nav-tabs">
-    <li class="active"><a href="#1"  data-toggle="tab">Urología</a></li>
-    <li ><a href="#2"  data-toggle="tab">Proctología</a></li>
+    <li class="active"><a href="#urologia"  data-toggle="tab">Urología</a></li>
+    <li ><a href="#proctologia"  data-toggle="tab">Proctología</a></li>
 
   </ul>
 
 
   <div class="tab-content ">
-    <div class="tab-pane active" id="1">
-      <h3>Standard tab panel created on bootstrap using nav-tabs</h3>
+    <div class="tab-pane active" id="urologia">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <div class="caption">
+              <h3>Enfermedad Peyronie / Curvatura Pene / Fibrosis Pene</h3>
+              <p>El pene está cubierto de fascias y músculos que participan en el mecanismo de la erección.
+La fibrosis en una de las fascias que envuelven el pene, la túnica albugínea, o en las estructuras adyacentes puede </p>
+              <p><a href="#" class="btn btn-primary" role="button">Ver más</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="tab-pane" id="2">
+    <div class="tab-pane" id="proctologia">
       <h3>Notice the gap between the content and tab after applying a background color</h3>
     </div>
-   
+
   </div>
 </div>
 
-  <div  ng-if="amsPacientesCtrl.checkTipoPaciente('mujeres')">
+<div  ng-if="amsPacientesCtrl.checkTipoPaciente('mujeres')">
 
-    <ul class="nav nav-tabs">
+  <ul class="nav nav-tabs">
 
-      <li  class="active"><a href="#1"  data-toggle="tab">Ginecología</a></li>
-      <li><a href="#2" data-toggle="tab">Urología</a></li>
-      <li><a href="#3" data-toggle="tab">Proctología</a></li>
-    </ul>
-    
-    <div class="tab-content ">
-    <div class="tab-pane active" id="1">
+    <li  class="active"><a href="#ginecologia"  data-toggle="tab">Ginecología</a></li>
+    <li><a href="#urologia" data-toggle="tab">Urología</a></li>
+    <li><a href="#proctologia" data-toggle="tab">Proctología</a></li>
+  </ul>
+
+  <div class="tab-content ">
+    <div class="tab-pane active" id="ginecologia">
       <h3>Standard tab panel created on bootstrap using nav-tabs</h3>
     </div>
-    <div class="tab-pane" id="2">
+    <div class="tab-pane" id="urologia">
       <h3>Notice the gap between the content and tab after applying a background color</h3>
     </div>
-   <div class="tab-pane" id="3">
+    <div class="tab-pane" id="proctologia">
       <h3>Notice the gap between the content and tab after applying a background color</h3>
     </div>
   </div>
 
 
-  </div>
+</div>
 
-  <div ng-if="amsPacientesCtrl.checkTipoPaciente('ninos')">
+<div ng-if="amsPacientesCtrl.checkTipoPaciente('ninos')">
 
-    <ul  class="nav nav-tabs">
-      <li  class="active"><a href="#">Home</a></li>
+  <ul  class="nav nav-tabs">
+    <li  class="active"><a href="#">Home</a></li>
 
-    </ul>
-  </div>
+  </ul>
+</div>

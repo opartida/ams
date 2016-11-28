@@ -16,6 +16,14 @@
             }
           }
         })
+        .state('app.consulta', {
+          url: '/',
+          views: {
+            'content@': {
+              template: '<ams-consulta></ams-consulta>'
+            }
+          }
+        })
         .state('app.tratamientos', {
           url: '/tratamientos',
           views: {
@@ -33,23 +41,10 @@
           }
         });
         
-        $locationProvider.html5Mode({
-          enabled: true,
-          requireBase: false
-        });
+       
 
-    })
-      .run(function($rootScope, $state, $stateParams, $timeout) {
-        $rootScope.$state = $state;
-        $rootScope.$stateParams = $stateParams;
-        $timeout(function() {
-
-          $state.transitionTo('app.home');
-
-        }, 500);
-
-
-      });
+    });
+      
 
   })();
 

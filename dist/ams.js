@@ -70,6 +70,59 @@
 
   /**
    * @ngdoc directive
+   * @name amsConsulta.component
+   * @description
+   *
+   */
+
+  amsConsultaCtrl.$inject = ["$window", "$stateParams"];
+  angular.module('ams').component('amsConsulta', {
+        bindings: {},
+        controller: amsConsultaCtrl,
+        controllerAs: 'amsConsultaCtrl',
+        templateUrl: 'src/scripts/amsConsulta/amsConsulta.tpl.html'
+      }
+  );
+
+  /**
+   * @ngdoc controller
+   * @name ams.controllers:amsConsultaCtrl
+   * @description
+   *
+   */
+  function amsConsultaCtrl($window,$stateParams) {
+
+    var self = this;
+
+    /**
+     * @ngdoc method
+     * @name $onInit
+     * @methodOf ams.controllers:amsConsultaCtrl
+     * @description
+     *
+     */
+    self.$onInit = function $onInit() {
+      
+    };
+    
+    
+
+  }
+})();
+  
+  
+  
+  
+  
+  
+  
+  
+
+ (function() {
+  'use strict';
+
+  /**
+   * @ngdoc directive
    * @name amsMain.component
    * @description
    *
@@ -105,8 +158,8 @@
       
     };
     
-    self.test = function test() {
-      $state.transitionTo('app.pacientes', {paciente: 'hombres'});
+    self.handleClickPacientes = function handleClickPacientes(tipo) {
+      $state.transitionTo('app.pacientes', {paciente: tipo});
     };
 
   }
@@ -214,33 +267,6 @@
   
   
 
-(function() {
-  'use strict';
-
-  angular
-    .module('ams')
-    .component('amsHeader', {
-      
-      bindings: {
-        
-      },
-      controller: headerCtrl,
-      controllerAs: 'headerCtrl',
-      templateUrl: 'src/scripts/header/amsHeader.tpl.html'
-    });
-
-  function headerCtrl() {
-    var self = this;
-
-
-    self.$onInit = function() {
-      
-    };
-  }
-})();
-  
-  
-
 //  (function() {
 //    'use strict';
 //    angular.module('ams')
@@ -292,6 +318,14 @@
             }
           }
         })
+        .state('app.consulta', {
+          url: '/',
+          views: {
+            'content@': {
+              template: '<ams-consulta></ams-consulta>'
+            }
+          }
+        })
         .state('app.tratamientos', {
           url: '/tratamientos',
           views: {
@@ -329,3 +363,30 @@
 
   })();
 
+
+(function() {
+  'use strict';
+
+  angular
+    .module('ams')
+    .component('amsHeader', {
+      
+      bindings: {
+        
+      },
+      controller: headerCtrl,
+      controllerAs: 'headerCtrl',
+      templateUrl: 'src/scripts/header/amsHeader.tpl.html'
+    });
+
+  function headerCtrl() {
+    var self = this;
+
+
+    self.$onInit = function() {
+      
+    };
+  }
+})();
+  
+  
