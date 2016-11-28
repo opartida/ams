@@ -1,0 +1,11 @@
+/* 
+    Created on : 25-nov-2016, 21:37:44
+    Author     : opartida
+*/
+.navbar-brand {
+  padding: 0px; }
+
+.navbar-brand > img {
+  height: 100%;
+  padding: 15px;
+  width: auto; }

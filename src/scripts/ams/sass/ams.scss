@@ -1,18 +1,17 @@
-
 /*
  * Style tweaks
  * --------------------------------------------------
  */
 html,
 body {
-  overflow-x: hidden;
-  /* Prevent scroll on narrow devices */ }
-
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
 body {
-  padding-top: 70px; }
-
+  padding-top: 70px;
+}
 footer {
-  padding: 30px 0; }
+  padding: 30px 0;
+}
 
 /*
  * Off Canvas
@@ -23,53 +22,70 @@ footer {
     position: relative;
     -webkit-transition: all .25s ease-out;
     -o-transition: all .25s ease-out;
-    transition: all .25s ease-out; }
+    transition: all .25s ease-out;
+  }
+
   .row-offcanvas-right {
-    right: 0; }
+    right: 0;
+  }
+
   .row-offcanvas-left {
-    left: 0; }
+    left: 0;
+  }
+
   .row-offcanvas-right
-.sidebar-offcanvas {
-    right: -50%;
-    /* 6 columns */ }
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
   .row-offcanvas-left
-.sidebar-offcanvas {
-    left: -50%;
-    /* 6 columns */ }
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
   .row-offcanvas-right.active {
-    right: 50%;
-    /* 6 columns */ }
+    right: 50%; /* 6 columns */
+  }
+
   .row-offcanvas-left.active {
-    left: 50%;
-    /* 6 columns */ }
+    left: 50%; /* 6 columns */
+  }
+
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
-    width: 50%;
-    /* 6 columns */ } }
+    width: 50%; /* 6 columns */
+  }
+}
 
 .carousel-fade {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 .carousel-fade .carousel-inner .item {
   opacity: 0;
-  transition-property: opacity; }
+  transition-property: opacity;
+}
 
 .carousel-fade .carousel-inner .active {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   left: 0;
   opacity: 0;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .carousel-fade .carousel-control {
-  z-index: 2; }
+  z-index: 2;
+}
 
 /*
 WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
@@ -80,18 +96,22 @@ now override the 3.3 new styles for modern browsers & apply opacity
   .carousel-fade .carousel-inner > .item.active.right {
     opacity: 0;
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0);
+  }
   .carousel-fade .carousel-inner > .item.prev,
   .carousel-fade .carousel-inner > .item.active.left {
     opacity: 0;
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0);
+  }
   .carousel-fade .carousel-inner > .item.next.left,
   .carousel-fade .carousel-inner > .item.prev.right,
   .carousel-fade .carousel-inner > .item.active {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 /* just for demo purpose */
 html,
@@ -99,50 +119,18 @@ body,
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
-  height: 100%; }
+  height: 100%;
+}
 
 .item:nth-child(1) {
-  background: blue; }
+  background: blue;
+}
 
 .item:nth-child(2) {
-  background: red; }
+  background: red;
+}
 
 .item:nth-child(3) {
-  background: orange; }
+  background: orange;
+}
 
-/* 
-    Created on : 28-nov-2016, 11:01:26
-    Author     : opartida
-*/
-
-/* 
-    Created on : 26-nov-2016, 0:06:50
-    Author     : opartida
-*/
-.panel-heading .accordion-toggle:after {
-  /* symbol for "opening" panels */
-  font-family: 'Glyphicons Halflings';
-  /* essential for enabling glyphicon */
-  content: "\e114";
-  /* adjust as needed, taken from bootstrap.css */
-  float: right;
-  /* adjust as needed */
-  color: grey;
-  /* adjust as needed */ }
-
-.panel-heading .accordion-toggle.collapsed:after {
-  /* symbol for "collapsed" panels */
-  content: "\e080";
-  /* adjust as needed, taken from bootstrap.css */ }
-
-/* 
-    Created on : 25-nov-2016, 21:37:44
-    Author     : opartida
-*/
-.navbar-brand {
-  padding: 0px; }
-
-.navbar-brand > img {
-  height: 100%;
-  padding: 15px;
-  width: auto; }
